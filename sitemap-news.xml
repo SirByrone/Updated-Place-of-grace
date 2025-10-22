@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  
+  <url>
+    <loc>https://www.placeofgracecommunitycentre.org/news</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Place of Grace Community Centre</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2024-12-19T10:00:00+00:00</news:publication_date>
+      <news:title>Latest News and Updates from Place of Grace Community Centre</news:title>
+      <news:keywords>children's home, Kenya, community development, education, healthcare</news:keywords>
+    </news:news>
+  </url>
+  
+  <url>
+    <loc>https://www.placeofgracecommunitycentre.org/programs</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Place of Grace Community Centre</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2024-12-19T10:00:00+00:00</news:publication_date>
+      <news:title>Our Programs - Education & Healthcare Services</news:title>
+      <news:keywords>children's programs, education services, healthcare support, Kenya</news:keywords>
+    </news:news>
+  </url>
+  
+  <url>
+    <loc>https://www.placeofgracecommunitycentre.org/impact</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Place of Grace Community Centre</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2024-12-19T10:00:00+00:00</news:publication_date>
+      <news:title>Our Impact - Transforming Lives in Kenya</news:title>
+      <news:keywords>community impact, children's success stories, Kenya development</news:keywords>
+    </news:news>
+  </url>
+  
+</urlset>

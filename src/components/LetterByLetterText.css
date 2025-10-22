@@ -1,0 +1,117 @@
+/* === LETTER-BY-LETTER TEXT ANIMATION === */
+
+.letter-by-letter-text {
+  display: inline-block;
+  position: relative;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.cursor {
+  animation: blink 0.8s infinite;
+  color: var(--primary, #3b82f6);
+  font-weight: bold;
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  vertical-align: text-bottom;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Hide cursor when animation is complete */
+.letter-by-letter-text.complete .cursor {
+  display: none;
+}
+
+/* Staggered letter animation */
+.letter-by-letter-text .letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: letterAppear 0.3s ease-out forwards;
+}
+
+@keyframes letterAppear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Different animation styles */
+.letter-by-letter-text.typewriter .cursor {
+  animation: blink 0.8s infinite;
+}
+
+.letter-by-letter-text.reverse-typewriter {
+  animation: reverseTypewriter 0.3s ease-out forwards;
+}
+
+.letter-by-letter-text.fade-in .letter {
+  animation: letterFadeIn 0.4s ease-out forwards;
+}
+
+@keyframes letterFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.letter-by-letter-text.slide-up .letter {
+  animation: letterSlideUp 0.3s ease-out forwards;
+}
+
+@keyframes letterSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reverseTypewriter {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .cursor {
+    font-size: 0.9em;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .letter-by-letter-text .letter {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  
+  .cursor {
+    animation: none;
+    opacity: 1;
+  }
+}

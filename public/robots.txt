@@ -1,0 +1,166 @@
+# Place of Grace Children's Home - Robots.txt
+# Optimized for SEO and security
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.placeofgracecommunitycentre.org/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow important pages
+Allow: /about/
+Allow: /programs/
+Allow: /contact/
+Allow: /get-involved/
+Allow: /gallery/
+Allow: /news/
+Allow: /transparency/
+Allow: /impact/
+Allow: /inclusion/
+Allow: /faq/
+Allow: /donate/
+Allow: /volunteer/
+Allow: /sponsor/
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /build/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /yarn.lock
+Disallow: /README.md
+Disallow: /.env
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /tests/
+Disallow: /test/
+Disallow: /coverage/
+Disallow: /docs/
+Disallow: /backup/
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /logs/
+Disallow: /error/
+Disallow: /404/
+Disallow: /500/
+
+# Allow important file types
+Allow: /*.html$
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.ico$
+Allow: /*.pdf$
+Allow: /*.xml$
+Allow: /*.txt$
+
+# Disallow unnecessary file types
+Disallow: /*.log$
+Disallow: /*.tmp$
+Disallow: /*.bak$
+Disallow: /*.old$
+Disallow: /*.zip$
+Disallow: /*.tar$
+Disallow: /*.gz$
+Disallow: /*.sql$
+Disallow: /*.db$
+Disallow: /*.sqlite$
+
+# Specific search engine directives
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 1
+
+User-agent: Twitterbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: LinkedInBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: WhatsApp
+Allow: /
+Crawl-delay: 1
+
+# Block aggressive crawlers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: Screaming Frog SEO Spider
+Crawl-delay: 10
+
+# Block malicious bots
+User-agent: *
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /administrator/
+Disallow: /cpanel/
+Disallow: /phpmyadmin/
+Disallow: /mysql/
+Disallow: /db/
+Disallow: /database/
+Disallow: /config/
+Disallow: /includes/
+Disallow: /lib/
+Disallow: /library/
+Disallow: /vendor/
+Disallow: /composer/
+Disallow: /bower_components/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.svn/
+Disallow: /.hg/
+Disallow: /.bzr/
+
+# Host directive
+Host: https://www.placeofgracecommunitycentre.org

@@ -1,0 +1,166 @@
+/* === FADE-IN TEXT ANIMATION SYSTEM === */
+
+.fade-in-text {
+  opacity: 0;
+  transition: all var(--animation-duration, 1000ms) cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Direction-based initial states */
+.fade-in-up {
+  transform: translateY(20px);
+}
+
+.fade-in-down {
+  transform: translateY(-20px);
+}
+
+.fade-in-left {
+  transform: translateX(-20px);
+}
+
+.fade-in-right {
+  transform: translateX(20px);
+}
+
+.fade-in-scale {
+  transform: scale(0.95);
+}
+
+.fade-in-fade {
+  transform: none;
+}
+
+/* Visible state */
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Staggered animation delays */
+.fade-in-text:nth-child(1) { --stagger-delay: 0ms; }
+.fade-in-text:nth-child(2) { --stagger-delay: 100ms; }
+.fade-in-text:nth-child(3) { --stagger-delay: 200ms; }
+.fade-in-text:nth-child(4) { --stagger-delay: 300ms; }
+.fade-in-text:nth-child(5) { --stagger-delay: 400ms; }
+.fade-in-text:nth-child(6) { --stagger-delay: 500ms; }
+.fade-in-text:nth-child(7) { --stagger-delay: 600ms; }
+.fade-in-text:nth-child(8) { --stagger-delay: 700ms; }
+.fade-in-text:nth-child(9) { --stagger-delay: 800ms; }
+.fade-in-text:nth-child(10) { --stagger-delay: 900ms; }
+
+/* Enhanced text animations */
+.fade-in-text h1,
+.fade-in-text h2,
+.fade-in-text h3,
+.fade-in-text h4,
+.fade-in-text h5,
+.fade-in-text h6 {
+  transition: inherit;
+}
+
+.fade-in-text p {
+  transition: inherit;
+}
+
+.fade-in-text .btn,
+.fade-in-text .button {
+  transition: inherit;
+}
+
+/* Special effects for different text types */
+.fade-in-text.hero-title {
+  --animation-duration: 1200ms;
+}
+
+.fade-in-text.hero-subtitle {
+  --animation-duration: 1000ms;
+  --stagger-delay: 200ms;
+}
+
+.fade-in-text.section-title {
+  --animation-duration: 800ms;
+}
+
+.fade-in-text.card-content {
+  --animation-duration: 600ms;
+}
+
+.fade-in-text.paragraph {
+  --animation-duration: 800ms;
+}
+
+/* Performance optimizations */
+.fade-in-text {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-text {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  
+  .fade-in-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .fade-in-text {
+    transition-duration: 0.3s;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .fade-in-text {
+    --animation-duration: 600ms;
+  }
+  
+  .fade-in-up {
+    transform: translateY(20px);
+  }
+  
+  .fade-in-down {
+    transform: translateY(-20px);
+  }
+  
+  .fade-in-left {
+    transform: translateX(-20px);
+  }
+  
+  .fade-in-right {
+    transform: translateX(20px);
+  }
+}
+
+/* Animation timing functions for different elements */
+.fade-in-text.hero-title {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-text.hero-subtitle {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-text.section-title {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-text.card-content {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-text.paragraph {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}

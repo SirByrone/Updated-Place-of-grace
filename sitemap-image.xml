@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <url>
+    <loc>https://www.placeofgracecommunitycentre.org/</loc>
+    <image:image>
+      <image:loc>https://www.placeofgracecommunitycentre.org/og-image.jpg</image:loc>
+      <image:title>Place of Grace Community Centre - Empowering Children & Communities in Kenya</image:title>
+      <image:caption>Children and staff at Place of Grace Community Centre</image:caption>
+      <image:geo_location>Kenya</image:geo_location>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</image:license>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.placeofgracecommunitycentre.org/about</loc>
+    <image:image>
+      <image:loc>https://www.placeofgracecommunitycentre.org/about-image.jpg</image:loc>
+      <image:title>About Place of Grace Community Centre</image:title>
+      <image:caption>Our mission and vision for empowering children in Kenya</image:caption>
+      <image:geo_location>Kenya</image:geo_location>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</image:license>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.placeofgracecommunitycentre.org/gallery</loc>
+    <image:image>
+      <image:loc>https://www.placeofgracecommunitycentre.org/gallery-image.jpg</image:loc>
+      <image:title>Photo Gallery - Our Children & Activities</image:title>
+      <image:caption>Photos and videos showcasing our children and activities</image:caption>
+      <image:geo_location>Kenya</image:geo_location>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</image:license>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://www.placeofgracecommunitycentre.org/programs</loc>
+    <image:image>
+      <image:loc>https://www.placeofgracecommunitycentre.org/programs-image.jpg</image:loc>
+      <image:title>Our Programs - Education & Healthcare Services</image:title>
+      <image:caption>Comprehensive programs for children and community development</image:caption>
+      <image:geo_location>Kenya</image:geo_location>
+      <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</image:license>
+    </image:image>
+  </url>
+  
+</urlset>
